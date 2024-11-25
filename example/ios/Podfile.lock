@@ -1,0 +1,128 @@
+PODS:
+  - DKImagePickerController/Core (4.3.9):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.3.9)
+  - DKImagePickerController/PhotoGallery (4.3.9):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.3.9)
+  - DKPhotoGallery (0.0.19):
+    - DKPhotoGallery/Core (= 0.0.19)
+    - DKPhotoGallery/Model (= 0.0.19)
+    - DKPhotoGallery/Preview (= 0.0.19)
+    - DKPhotoGallery/Resource (= 0.0.19)
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Core (0.0.19):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Model (0.0.19):
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Preview (0.0.19):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Resource (0.0.19):
+    - SDWebImage
+    - SwiftyGif
+  - FacebookSDK (11.2.1):
+    - FacebookSDK/AEMKit (= 11.2.1)
+    - FacebookSDK/Basics (= 11.2.1)
+    - FacebookSDK/CoreKit (= 11.2.1)
+    - FacebookSDK/LoginKit (= 11.2.1)
+    - FacebookSDK/ShareKit (= 11.2.1)
+    - FacebookSDK/TVOSKit (= 11.2.1)
+  - FacebookSDK/AEMKit (11.2.1):
+    - FacebookSDK/Basics
+  - FacebookSDK/Basics (11.2.1)
+  - file_picker (0.0.1):
+    - DKImagePickerController/PhotoGallery
+    - Flutter
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - SDWebImage (5.20.0):
+    - SDWebImage/Core (= 5.20.0)
+  - SDWebImage/Core (5.20.0)
+  - SnapSDK (2.5.0):
+    - SnapSDK/SCSDKCoreKit (= 2.5.0)
+    - SnapSDK/SCSDKCreativeKit (= 2.5.0)
+    - SnapSDK/SCSDKLoginKit (= 2.5.0)
+  - SnapSDK/SCSDKCoreKit (2.5.0)
+  - SnapSDK/SCSDKCreativeKit (2.5.0):
+    - SnapSDK/SCSDKCoreKit
+  - SnapSDK/SCSDKLoginKit (2.5.0):
+    - SnapSDK/SCSDKCoreKit
+  - SwiftyGif (5.4.5)
+  - TikTokOpenAuthSDK (2.5.0):
+    - TikTokOpenAuthSDK/Auth (= 2.5.0)
+    - TikTokOpenSDKCore (= 2.5.0)
+  - TikTokOpenAuthSDK/Auth (2.5.0):
+    - TikTokOpenSDKCore (= 2.5.0)
+  - TikTokOpenSDKCore (2.5.0):
+    - TikTokOpenSDKCore/Core (= 2.5.0)
+  - TikTokOpenSDKCore/Core (2.5.0)
+  - TikTokOpenShareSDK (2.5.0):
+    - TikTokOpenSDKCore (= 2.5.0)
+    - TikTokOpenShareSDK/Share (= 2.5.0)
+  - TikTokOpenShareSDK/Share (2.5.0):
+    - TikTokOpenSDKCore (= 2.5.0)
+  - video_multishare (0.0.1):
+    - FacebookSDK
+    - Flutter
+    - SnapSDK
+    - TikTokOpenAuthSDK
+    - TikTokOpenSDKCore
+    - TikTokOpenShareSDK
+
+DEPENDENCIES:
+  - file_picker (from `.symlinks/plugins/file_picker/ios`)
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - video_multishare (from `.symlinks/plugins/video_multishare/ios`)
+
+SPEC REPOS:
+  trunk:
+    - DKImagePickerController
+    - DKPhotoGallery
+    - FacebookSDK
+    - SDWebImage
+    - SnapSDK
+    - SwiftyGif
+    - TikTokOpenAuthSDK
+    - TikTokOpenSDKCore
+    - TikTokOpenShareSDK
+
+EXTERNAL SOURCES:
+  file_picker:
+    :path: ".symlinks/plugins/file_picker/ios"
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  video_multishare:
+    :path: ".symlinks/plugins/video_multishare/ios"
+
+SPEC CHECKSUMS:
+  DKImagePickerController: 946cec48c7873164274ecc4624d19e3da4c1ef3c
+  DKPhotoGallery: b3834fecb755ee09a593d7c9e389d8b5d6deed60
+  FacebookSDK: b9c123df2ed622faadd8b546632ae8048d1f9b28
+  file_picker: ce3938a0df3cc1ef404671531facef740d03f920
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
+  SDWebImage: 73c6079366fea25fa4bb9640d5fb58f0893facd8
+  SnapSDK: 7f9cff455207306ba63588026cbf7ed1a1a505c2
+  SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4
+  TikTokOpenAuthSDK: 35d99f5778b9635ab983bb25c4acf6ccad4404a9
+  TikTokOpenSDKCore: e6f34e48bd6e85e4d94f9c04782c13d5defafb55
+  TikTokOpenShareSDK: a7da017bc66c28d0aefea9342c0cfcc7e52ea2b7
+  video_multishare: c6538859457ddb93a13ecc229b2cbfaf44937b8d
+
+PODFILE CHECKSUM: 5dfd2ad5365c3f4a4bd161204642733f739694a6
+
+COCOAPODS: 1.14.3
