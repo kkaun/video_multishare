@@ -68,7 +68,7 @@ FYI: An Android sharing composal flow uses common video URI providing mechanism 
 Due to various platform requirements and limitations for the targeted services, iOS setup required more extra actions.
 
 #### Important Disclaimer for iOS Setup:
-To use the full capabilities of the plugin on iOS, your app must be already registered within the respective developer portals:
+To use the full capabilities of the plugin on iOS, your app must be already registered within the corresponding developer portals:
 
 - Instagram Developer Portal: For Instagram Stories and Reels sharing support.
 - TikTok Developer Portal: For TikTok sharing support.
@@ -124,7 +124,7 @@ Add the following schemes to your Info.plist to enable sharing functionality wit
 ```
 
 ##### Keys:
-Add your(!) app service keys for platform-specific configurations:
+Add your(!) app service keys for platform-specific configurations necessary for each platform default integration support, such as:
 
 ```
 <key>TikTokClientKey</key>
