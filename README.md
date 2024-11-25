@@ -32,6 +32,20 @@ dependencies:
 
 2. Run ```flutter pub get```
 
+3. Call the plugin from the flutter code:
+```
+
+///...
+await VideoMultishare.requestShareOptions(
+  context: context,
+  videoPath: _pickedVideoPath ?? "",
+  onShareResult: (message) {
+    //Do anything with result message,
+    // which either indicates the sharing led
+    // to the external app flow or to an error.
+  },
+);
+```
 
 ## Android Setup
 Andorid setup is pretty simple and contains mostly optional points for overall functionality to work flawlessly.
