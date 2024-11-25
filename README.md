@@ -32,10 +32,10 @@ dependencies:
 
 2. Run ```flutter pub get```
 
-3. Call the plugin from the flutter code:
-```
+3. Import: ```import 'package:video_multishare/video_multishare.dart';```
 
-///...
+4. Call the plugin from the Flutter code (event/click/etc.):
+```
 await VideoMultishare.requestShareOptions(
   context: context,
   videoPath: _pickedVideoPath ?? "",
