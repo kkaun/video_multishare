@@ -46,7 +46,7 @@ Update *AndroidManifest.xml* .
     </intent-filter>
 ```
 
-! If your app supports file sharing, you should to check if it overrides such of the plugin's *file_paths.xml*.  in /android/main/res/xml/:
+If your app supports file sharing, you should to check if it overrides such of the plugin's *file_paths.xml*.  in /android/main/res/xml/:
 ```
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
     <external-path name="external_files" path="." />
@@ -56,15 +56,28 @@ Update *AndroidManifest.xml* .
 ```
 Otherwise, you can ignore that point.
 
-Set the permissions (may be optional and depending on the app video file composal flow):
+Set the permissions (may be optional and heavily depending on the app video file composal flow):
 ```
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 ```
+FYI: An Android sharing composal flow uses common video URI providing mechanism before triggering any share intent, which works universally good for all described services, so storage permissions usage may or may not be mandatory depending on you app's file mgmt logic (f.e. for the example app it's mandatory, but for the other one may be not).
 
 ## iOS Setup
 
 Due to various platform requirements and limitations for the targeted services, iOS setup required more extra actions.
+
+#### Important Disclaimer for iOS Setup:
+To use the full capabilities of the plugin on iOS, your app must be already registered within the respective developer portals:
+
+- Instagram Developer Portal: For Instagram Stories and Reels sharing support.
+- TikTok Developer Portal: For TikTok sharing support.
+- Facebook Developer Portal: For Facebook sharing support.
+- Snapchat Developer Portal: For Snap sharing support.
+
+Without the proper consumer app registraction, such services will not support direct sharing on any iOS device.
+
+! Example app does not contain such valid keys for the number of objective reasons, and mainly because most of the services from this list won't allow valid creds generation for an unpublished Flutter plugin sample app.
 
 ##### Capabilities:
 Add the following capabilities to your Info.plist:
@@ -128,18 +141,6 @@ Add your(!) app service keys for platform-specific configurations:
 <key>FacebookAppID</key>
 <string>your_facebook_app_id</string>
 ```
-
-#### ! Important Reminder for iOS Setup:
-To use the plugin full capabilities on iOS, your app must be already registered within the respective developer portals:
-
-- Facebook Developer Portal: For Facebook sharing.
-- Instagram Developer Portal: For Instagram Stories and Reels sharing.
-- TikTok Developer Portal: For TikTok sharing.
-- Snapchat Developer Portal: For Snap sharing.
-
-Without the proper consumer app registraction, such services will not support direct sharing on any iOS device.
-
-Example app does not contain such valid keys for the number of reasons, and mainly because most of the services from this list won't allow valid creds generation for an unpublished Flutter plugin sample app.
 
 #### Regarding some generic sharing options on iOS:
 
