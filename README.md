@@ -79,7 +79,7 @@ FYI: An Android sharing composal flow uses common video URI providing mechanism 
 
 ## iOS Setup
 
-Due to various platform requirements and limitations for the targeted services, iOS setup required more extra actions.
+Due to various platform requirements and limitations for the targeted services, iOS setup requires more extra actions.
 
 #### Important Disclaimer for iOS Setup:
 To use the full capabilities of the plugin on iOS, your app must be already registered within the corresponding developer portals:
@@ -91,7 +91,7 @@ To use the full capabilities of the plugin on iOS, your app must be already regi
 
 Without the proper consumer app registraction, such services will not support direct sharing on any iOS device.
 
-! Example app does not contain such valid keys for the number of objective reasons, and mainly because most of the services from this list won't allow valid creds generation for an unpublished Flutter plugin sample app.
+! Provided Flutter example app does not contain such valid keys for the number of objective reasons, and mainly because most of the services from this list won't allow valid creds generation for an unpublished Flutter plugin sample app.
 
 ##### Capabilities:
 Add the following capabilities to your Info.plist:
@@ -158,9 +158,9 @@ Add your(!) app service keys for platform-specific configurations necessary for 
 
 #### Regarding some generic sharing options on iOS:
 
-- Due to FB SDK complexity in the context of integration into any kind of iOS Framework (as a part of Flutter plugin), only FB Stories functionality is left for iOS. It's way easier to integrate FB SDK into the own app's ios/ structure, rather then not plugin/package.
+- Due to FB SDK complexity in the context of integration into any kind of iOS Framework (as a part of Flutter plugin), only FB Stories functionality is left for iOS. It's way easier to integrate FB SDK into the own app's ios/ structure, rather then into Flutter plugin/package.
 
-- As known, YouTube Shorts sharing was replaces by simple YT Video Upload flow, again due to iOS-related restrictions.
+- As known, YouTube Shorts sharing was replaced by simple YT Video Upload flow, again due to iOS-related restrictions.
 
 - Content descrption for some sharing methods (like Snapchat) can be additionally customized via VideoSharingDelegate.swift manual adjustment.
 
