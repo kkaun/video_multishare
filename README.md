@@ -66,7 +66,7 @@ Set the permissions (may be optional and depending on the app video file composa
 
 Due to various platform requirements and limitations for the targeted services, iOS setup required more extra actions.
 
-##### Capabilities
+##### Capabilities:
 Add the following capabilities to your Info.plist:
 
 ```
@@ -82,7 +82,7 @@ Add the following capabilities to your Info.plist:
 <true/>
 ```
 
-##### LSApplicationQueriesSchemes
+##### LSApplicationQueriesSchemes:
 Add the following schemes to your Info.plist to enable sharing functionality with supported apps:
 
 ```
@@ -110,7 +110,7 @@ Add the following schemes to your Info.plist to enable sharing functionality wit
 
 ```
 
-##### Keys
+##### Keys:
 Add your(!) app service keys for platform-specific configurations:
 
 ```
@@ -129,7 +129,7 @@ Add your(!) app service keys for platform-specific configurations:
 <string>your_facebook_app_id</string>
 ```
 
-#### ! Important Reminder for iOS Setup
+#### ! Important Reminder for iOS Setup:
 To use the plugin full capabilities on iOS, your app must be already registered within the respective developer portals:
 
 - Facebook Developer Portal: For Facebook sharing.
@@ -137,10 +137,11 @@ To use the plugin full capabilities on iOS, your app must be already registered 
 - TikTok Developer Portal: For TikTok sharing.
 - Snapchat Developer Portal: For Snap sharing.
 
-Without those actions, such services will not support direct sharing on any iOS device.
+Without the proper consumer app registraction, such services will not support direct sharing on any iOS device.
+
 Example app does not contain such valid keys for the number of reasons, and mainly because most of the services from this list won't allow valid creds generation for an unpublished Flutter plugin sample app.
 
-#### Regarding some generic sharing options on iOS
+#### Regarding some generic sharing options on iOS:
 
 - Due to FB SDK complexity in the context of integration into any kind of iOS Framework (as a part of Flutter plugin), only FB Stories functionality is left for iOS. It's way easier to integrate FB SDK into the own app's ios/ structure, rather then not plugin/package.
 
