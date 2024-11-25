@@ -63,10 +63,10 @@ Set the permissions (may be optional and depending on the app video file composa
 ```
 
 ## iOS Setup
-##### Capabilities
 
 Due to various platform requirements and limitations for the targeted services, iOS setup required more extra actions.
 
+##### Capabilities
 Add the following capabilities to your Info.plist:
 
 ```
@@ -138,6 +138,7 @@ To use the plugin full capabilities on iOS, your app must be already registered 
 - Snapchat Developer Portal: For Snap sharing.
 
 Without those actions, such services will not support direct sharing on any iOS device.
+Example app does not contain such valid keys for the number of reasons, and mainly because most of the services from this list won't allow valid creds generation for an unpublished Flutter plugin sample app.
 
 #### Regarding some generic sharing options on iOS
 
@@ -146,3 +147,4 @@ Without those actions, such services will not support direct sharing on any iOS 
 - As known, YouTube Shorts sharing was replaces by simple YT Video Upload flow, again due to iOS-related restrictions.
 
 - Content descrption for some sharing methods (like Snapchat) can be additionally customized via VideoSharingDelegate.swift manual adjustment.
+
